@@ -10,4 +10,4 @@ __Instruction:__
 - Enter ssid and password
 - Open the Network and Sharing Center
 - Change adapter settings
-- Done!
+- Done! :heart_eyes:
