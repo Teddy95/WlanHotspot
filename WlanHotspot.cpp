@@ -6,9 +6,9 @@ using namespace std;
 
 int main(void) {
     string ssid, password, setNetwork;
-    cout << "WLAN Hotspot erstellen!" << endl << endl << "SSID (Name des Netzwerkes): ";
+    cout << "Create WLAN hotspot!" << endl << endl << "SSID (Network name): ";
     getline(cin, ssid);
-    cout << "WLAN Passwort: ";
+    cout << "WLAN Password: ";
     getline(cin, password);
 
     setNetwork = "netsh wlan set hostednetwork mode=allow ssid=" + ssid + " password=" + password;
@@ -16,7 +16,7 @@ int main(void) {
     system(setNetwork.c_str());
     system("netsh wlan start hostednetwork");
 
-    cout << "WLAN Hotspot wurde gestartet!";
+    cout << "WLAN hotspot has been started!";
 
     Sleep(2000);
 
